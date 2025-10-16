@@ -1,6 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-// 🔹 Thunk asincrono per il fetch dei lavori
 export const fetchJobs = createAsyncThunk("jobs/fetchJobs", async (query) => {
   const response = await fetch(
     `https://remotive.com/api/remote-jobs?search=${query}`
@@ -19,7 +18,7 @@ const jobsSlice = createSlice({
     loading: false,
     error: null,
   },
-  reducers: {}, // non ci servono reducers sincronici qui
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchJobs.pending, (state) => {

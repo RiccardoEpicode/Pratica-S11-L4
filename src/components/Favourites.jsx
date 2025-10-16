@@ -21,7 +21,6 @@ const Favourites = () => {
                 <p className="text-muted mb-1">{job.title}</p>
 
                 <div className="d-flex gap-2 align-items-center">
-                  {/* ✅ mostriamo un testo leggibile invece di {job} */}
                   <Link to={`/${job.company_name}`}>View Jobs</Link>
 
                   <Button
