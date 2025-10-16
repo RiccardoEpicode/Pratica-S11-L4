@@ -18,7 +18,7 @@ function App() {
           />
           Home
         </Link>
-        <Link to="/favourites" className="text-light ms-3">
+        <Link to="/favourites" className="text-light ms-3 text-decoration-none">
           Favourites
         </Link>
       </nav>
